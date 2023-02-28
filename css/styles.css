@@ -356,6 +356,7 @@ img {
   width: 40px;
   height: 40px;
 }
+
 .social-link {
   display: flex;
   align-items: center;
@@ -373,6 +374,26 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--clr-hove-beck);
+
+  animation: shake 2s;
+}
+
+@keyframes shake {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
 }
 
 .social-icon {
@@ -494,6 +515,8 @@ img {
 .social-link-foot:hover,
 .social-link-foot:focus {
   background-color: var(--clr-hove-media);
+
+  animation: shake 2s;
 }
 
 /* Portfolio secondary page */
